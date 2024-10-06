@@ -6,9 +6,6 @@ def sigma(food: str) -> None:
     eat(food=food)
 
 
-sigma(food="apple")
-
-
 def greet(name: str) -> str:
     print(
         "Hello, "
@@ -25,9 +22,6 @@ def main() -> None:
     print(greet(name="Semi"))
 
 
-main()
-
-
 def check_first_letter(word: str, letter: str) -> None:
     if word[0] == letter:
         print("match!")
@@ -35,5 +29,19 @@ def check_first_letter(word: str, letter: str) -> None:
         print("no match!")
 
 
-print(check_first_letter(word="semi", letter="s"))
-print(check_first_letter(word="jalen", letter="f"))
+def remove_chars(msg: str, char: str) -> str:
+    copy: str = ""
+    index: int = 0
+    while index < len(msg):
+        if msg[index] != char:
+            copy = copy + msg[index]
+        index += 1
+    return copy
+
+
+my_numbers = list()
+print(my_numbers)
+
+game_points: list[int] = [102, 86, 94]
+game_points.append(94)
+print(game_points)
