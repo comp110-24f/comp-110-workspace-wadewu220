@@ -45,3 +45,12 @@ print(my_numbers)
 game_points: list[int] = [102, 86, 94]
 game_points.append(94)
 print(game_points)
+
+
+pets: list[str] = ["Louie", "Bo", "Bear"]
+for dogs in pets:
+    print(f"Good boy, {dogs}!")
+
+names: list[str] = ["Alyssa", "Janet", "Vrinda"]
+for idx in range(0, len(names)):
+    print(f"{idx}: {names[idx]}")
