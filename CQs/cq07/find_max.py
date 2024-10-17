@@ -14,10 +14,6 @@ def find_and_remove_max(input: list[int]) -> int:
     while idx < len(input):
         if input[idx] == big_number:
             input.pop(idx)
-        idx += 1
+        else:
+            idx += 1
     return big_number
-
-
-a: list[int] = [2, 3, 4, 2, 8, 10, 11, 3, 15, 4, 15]
-print(find_and_remove_max(a))
-print(a)

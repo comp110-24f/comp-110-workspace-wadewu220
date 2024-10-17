@@ -8,9 +8,9 @@ def test_find_and_remove_max_use_case() -> None:
 
 
 def test_find_and_remove_max_use_case_2() -> None:
-    input: list[int] = [5, 2, 3, 5, 1]
+    input: list[int] = [1, 8, 2, 3, 3]
     find_and_remove_max(input)
-    assert input == [2, 3, 1]
+    assert input == [1, 2, 3, 3]
 
 
 def test_find_and_remove_max_edge_case() -> None:
